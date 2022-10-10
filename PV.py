@@ -73,16 +73,11 @@ ventana.config(bg='white')                                                     #
 
 #--------------------------------- Estética ----------------------------------------------
 
-""" ventana.iconbitmap("C:/Users/JESID PEREZ/Documents/GitHub/APP-PV-/Aestethic/Icono1.ico")
+ventana.iconbitmap("C:/Users/JESID PEREZ/Documents/GitHub/APP-PV-/Aestethic/Icono1.ico")
 
-ventana.iconbitmap("C:/Users/elect/Dropbox/PC/Desktop/Vainas/UPB\
-/Semestre 6 - 20222/FotoVoltaico/App/APP-PV-/Aestethic/Icono1.ico")
+icono_grande = tk.PhotoImage(file="Barra.png")
 
-icono_grande = tk.PhotoImage(file="C:/Users/elect/Dropbox/PC/Desktop/Vainas/UPB\
-/Semestre 6 - 20222/FotoVoltaico/App/APP-PV-/Aestethic/Barra.png")
-
-imagen = PhotoImage(file = "C:/Users/elect/Dropbox/PC/Desktop/Vainas/UPB\
-/Semestre 6 - 20222/FotoVoltaico/App/APP-PV-/Aestethic/ejemplo1.png")
+imagen = PhotoImage(file = "ejemplo1.png")
 
 # Con Label y la opción image, puedes mostrar una imagen en el widget:
 background = Label(image = imagen, text = "Imagen")
