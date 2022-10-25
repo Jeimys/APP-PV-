@@ -50,7 +50,8 @@ def calcular_paneles() :
     # Número de Baterías
     arreglo_de_baterias = math.ceil(c_a/capacidad_individual_baterias)
     numero_baterias = arreglo_de_baterias*(voltaje_sistema/voltaje_baterias)
-    etiqueta_numero_baterias.config(text=f"Número baterías: {math.ceil(numero_baterias)} Baterías en arreglos de {arreglo_de_baterias}")
+    baterias_por_arreglo = numero_baterias / arreglo_de_baterias
+    etiqueta_numero_baterias.config(text=f"Número de baterías: {math.ceil(numero_baterias)} en {arreglo_de_baterias} arreglos de {math.ceil(baterias_por_arreglo)} baterías")
 
     # Controldor de carga
     corriente_entrada = 1.25*numero_de_paneles_2*corriente_panel
